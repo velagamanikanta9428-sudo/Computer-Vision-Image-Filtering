@@ -52,51 +52,25 @@ Input image:
 
 ## Formula
 
-For an `n × n` averaging filter:
 
-\[
-K = \frac{1}{n^2}
-\]
 
 ### 3 × 3 Kernel
 
-\[
-K = \frac{1}{9}
-\begin{bmatrix}
-1&1&1\\
-1&1&1\\
-1&1&1
-\end{bmatrix}
-\]
+python
+kernal_3x3=np.ones((3,3),np.float32)/9
+'''
 
 ### 5 × 5 Kernel
 
-\[
-K = \frac{1}{25}
-\begin{bmatrix}
-1&1&1&1&1\\
-1&1&1&1&1\\
-1&1&1&1&1\\
-1&1&1&1&1\\
-1&1&1&1&1
-\end{bmatrix}
-\]
+'''python
+kernal_5x5=np.ones((5,5),np.float32)/25
+'''
 
 ### 7 × 7 Kernel
 
-\[
-K = \frac{1}{49}
-\begin{bmatrix}
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1\\
-1&1&1&1&1&1&1
-\end{bmatrix}
-\]
-
+'''python
+kernal_7x7=np.ones((7,7),np.float32)/49
+'''
 
 ## Results
 
