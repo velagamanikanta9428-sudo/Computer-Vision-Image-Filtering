@@ -52,37 +52,51 @@ Input image:
 
 ## Formula
 
-For an averaging filter:
+For an `n × n` averaging filter:
 
 \[
 K = \frac{1}{n^2}
 \]
 
-Example:
-
-### 3×3 Kernel
+### 3 × 3 Kernel
 
 \[
-\frac{1}{9}
+K = \frac{1}{9}
 \begin{bmatrix}
-1 & 1 & 1 \\
-1 & 1 & 1 \\
-1 & 1 & 1
+1&1&1\\
+1&1&1\\
+1&1&1
 \end{bmatrix}
 \]
 
-### 5×5 Kernel
+### 5 × 5 Kernel
 
 \[
-\frac{1}{25}
+K = \frac{1}{25}
 \begin{bmatrix}
-1 & \cdots & 1 \\
-\vdots & \ddots & \vdots \\
-1 & \cdots & 1
+1&1&1&1&1\\
+1&1&1&1&1\\
+1&1&1&1&1\\
+1&1&1&1&1\\
+1&1&1&1&1
 \end{bmatrix}
 \]
 
----
+### 7 × 7 Kernel
+
+\[
+K = \frac{1}{49}
+\begin{bmatrix}
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1\\
+1&1&1&1&1&1&1
+\end{bmatrix}
+\]
+
 
 ## Results
 
